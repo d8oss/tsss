@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{% block title %}{% endblock %} | BeSimple</title>
+    <!-- Css -->
+    {% include 'main/in/css.html' %}
+</head>
+<body>
+<!-- Голова -->
+{% include 'main/in/header.html' %}
+<!-- Основной блок -->
+<main>
+    {% block main %}{% endblock %}
+</main>
+<!-- Подвал -->
+{% include 'main/in/footer.html' %}
+{% include 'main/in/js.html' %}
+</body>
+</html>
+<!--
+
+=========================================================
+* Pixel Bootstrap 5 UI Kit
+=========================================================
+
+* Copyright 2021 Themesberg (https://www.themesberg.com)
+
+* Coded by https://themesberg.com
+
+=========================================================
+
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. Contact us if you want to remove it.
+
+-->

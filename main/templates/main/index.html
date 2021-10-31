@@ -1,0 +1,153 @@
+{% extends 'main/base.html' %}
+{% block title %}Главная{% endblock %}
+{% block main %}
+    <section class="section-header bg-secondary text-white">
+        <div class="container">
+            <div class="row justify-content-between align-items-center">
+                <div class="col-12 col-md-7 col-lg-6 text-center text-md-left">
+                    <h1 class="display-2 mb-4">Будь проще.<br class="d-none d-md-inline"> BeSimple</h1>
+                    <p class="lead mb-4 text-muted">Классическая анархия без доната и приватов.</p>
+                    <a href="#buy" class="btn btn-tertiary me-3 animate-up-2">Получить доступ <span
+                            class="ms-2"><span class="fas fa-arrow-right"></span></span></a>
+                </div>
+                <div class="col-12 col-md-5 d-none d-md-block text-center"><img
+                        src="../../assets/img/illustrations/about-illustration.svg" alt=""></div>
+            </div>
+        </div>
+    </section>
+    <section class="section section-md">
+        <div class="container">
+            <div class="row align-items-center justify-content-around">
+                <div class="col-md-6 col-xl-6 mb-5">
+                    <img class="organic-radius img-fluid" src="static/bg.jpg" alt="Office Desk">
+                </div>
+                <div class="col-md-6 col-xl-5 text-center text-md-left">
+                    <h2 class="h1 mb-5">Идеальный баланс.</h2>
+                    <p class="lead">Классическая анархия без доната и приватов. Разрешенный некоторые читы.</p>
+                    <p class="lead">Мы стараемся соблюдать баланс между игроками, поэтому у нас нету донатов. Стабильная
+                        игра и комфортный пинг вам обеспечен.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section section-lg pt-0">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-lg-4 text-center">
+                    <!-- Visit Box -->
+                    <div class="icon-box mb-4">
+                        <div class="icon icon-primary mb-4">
+                            <span class="fas fa-user"></span>
+                        </div>
+                        <h3 class="h5">Игроки онлайн</h3>
+                        <span class="counter display-3 text-gray d-block">{{ players }}</span>
+                    </div>
+                    <!-- End of Visit Box -->
+                </div>
+                <div class="col-md-4 col-lg-4 text-center">
+                    <!-- Call Box -->
+                    <div class="icon-box mb-4">
+                        <div class="icon icon-primary mb-4">
+                            <span class="fas fa-money-check"></span>
+                        </div>
+                        <h3 class="h5">Покупок доступа</h3>
+                        <span class="counter display-3 text-gray d-block">165</span>
+                    </div>
+                    <!-- End of Call Box -->
+                </div>
+                <div class="col-md-4 col-lg-4 text-center">
+                    <!-- Email Box -->
+                    <div class="icon-box mb-4">
+                        <div class="icon icon-primary mb-4">
+                            <span class="fas fa-globe-europe"></span>
+                        </div>
+                        <h3 class="h5">Пинг</h3>
+                        <span class="counter display-3 text-gray d-block">{{ ping }}</span>
+                    </div>
+                    <!-- End of Email Box -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section section-md">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-12 col-lg-10"><h2 class="h1 fw-light mb-4">Наши <span
+                        class="fw-bold">основные</span> преймущества</h2>
+                    <p class="lead">Чем мы лучше остальных проектов?</p>
+                </div>
+            </div>
+            <div class="row justify-content-between mt-4">
+                <div class="col-sm-12 col-md-6 col-lg-5 mb-5 mb-md-0">
+                    <div class="icon-box">
+                        <div class="icon icon-shape icon-shape-secondary organic-radius mb-4"><span
+                                class="fas fa-tablet-alt"></span></div>
+                        <h3 class="h4">Мощные сервера</h3>
+                        <p class="my-3">На нашем сервере 70 гб оперативной памяти. Этого достаточно, чтобы выдержать огромный наплыв игроков. А пропускная способность 1 ТБ/сек обеспечит приятную игру без тормозов.</p></div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-5">
+                    <div class="icon-box">
+                        <div class="icon icon-shape icon-shape-secondary organic-radius mb-4"><span
+                                class="fas fa-fire-alt"></span></div>
+                        <h3 class="h4">Разрешены читы</h3>
+                        <p class="my-3">Можно использовать хаки, которые не вредят игрокам. Вы не будите забанены за использование вредоносных читов. Вас просто кикнет с сервера</p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="buy" class="section section-md">
+        <div class="container">
+            <div class="row justify-content-center mb-5 mb-lg-7">
+                <div class="col-12 col-md-8 text-center"><h2 class="h1 mb-4">Присоеденяйтесь к нам.</h2>
+                    <p class="lead">Каждая покупка несёт свой вклад в развитие проекта.</p></div>
+            </div>
+            <div class="row g-0">
+                <div class="col-12 col-md-8 col-lg-4 mx-md-auto">
+                    <div class="card border-gray-300 rounded-right-0 p-4 mb-5 mb-lg-0">
+                        <div class="card-header border-bottom bg-white text-center"><span class="d-block"><span
+                                class="display-1 text-primary fw-bold"><span
+                                class="align-top font-medium">₽</span>50 </span><span class="text-gray font-small">/ месяц</span></span>
+                        </div>
+                        <div class="card-body text-center"><p>Доступ к серверу на 30 дней</p>
+                            <div class="d-grid">
+                                <a href="buy/1" type="button" class="btn btn-outline-primary"><span
+                                        class="fas fa-cart-plus me-3"></span>Купить
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-8 col-lg-4 mx-md-auto">
+                    <div class="card border-gray-300 px-4 py-5 mt-lg-n5 mb-5 mb-lg-0">
+                        <div class="card-header border-bottom bg-white text-center"><span class="d-block"><span
+                                class="display-1 text-primary fw-bold"><span class="align-top font-medium">₽</span>100 </span><span
+                                class="text-gray font-small">/ 3 месяца</span></span></div>
+                        <div class="card-body text-center pb-2"><p>Доступ к серверу на 90 дней</p>
+                            </ul>
+                            <div class="d-grid">
+                                <a href="buy/2" type="button" class="btn btn-outline-primary"><span
+                                        class="fas fa-cart-plus me-3"></span>Купить
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-8 col-lg-4 mx-md-auto">
+                    <div class="card border-gray-300 rounded-left-0 p-4">
+                        <div class="card-header border-bottom bg-white text-center"><span class="d-block"><span
+                                class="display-1 text-primary fw-bold"><span
+                                class="align-top font-medium">₽</span>250 </span><span class="text-gray font-small">/ навсегда</span></span>
+                        </div>
+                        <div class="card-body text-center"><p>Неограниченный доступ к серверу</p>
+                            <div class="d-grid">
+                                <a href="buy/3" type="button" class="btn btn-outline-primary"><span
+                                        class="fas fa-cart-plus me-3"></span>Купить
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}
