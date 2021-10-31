@@ -17,4 +17,4 @@ export { createPopper, popperGenerator, defaultModifiers, detectOverflow }; // e
 
 export { createPopper as createPopperLite } from "./popper-lite.js"; // eslint-disable-next-line import/no-unused-modules
 
-export * from "./modifiers/index.js";
+export * from "./modifiers";

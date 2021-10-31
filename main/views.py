@@ -21,8 +21,10 @@ def buy(request, id):
             i = '684393'
         if id == 3:
             i = '684394'
-        res = requests.get('https://api.trademc.org/Shop.buyitems?shop=165333&items='+i+'&buyer='+user+'&v=v3').json()
-        return redirect('https://pay.trademc.org/?cart_id='+str(res['response']['cart_id'])+'&success_url=https://docs.besimple.fun/informaciya/kak-igrat&fail_url=https://docs.besimple.fun/informaciya/kak-igrat')
+        res = requests.get(
+            'https://api.trademc.org/Shop.buyitems?shop=165333&items=' + i + '&buyer=' + user + '&v=v3').json()
+        return redirect('https://pay.trademc.org/?cart_id=' + str(res['response'][
+                                                                      'cart_id']) + '&success_url=https://docs.besimple.fun/&fail_url=https://docs.besimple.fun')
     else:
         if id == 1:
             desk = "Покупка доступа к серверу на 1 месяц"
